@@ -4,18 +4,14 @@
   <title>WEB1 - Welcome</title>
   <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <script src="colors.js"></script>
 </head>
 <body>
   <h1><a href="index.html"style="color:blue;text-decoration:underline;">WEB</a></h1>
   <div id="button">
-  <input type="button" value="night" onclick="
-  document.querySelector('body').style.backgroundColor='black';
-  document.querySelector('body').style.color='white';"
-  >
-  <input type="button" value="day" onclick="
-  document.querySelector('body').style.backgroundColor='white';
-  document.querySelector('body').style.color='black';"
-  >
+    <input type="button" value="night" onclick="
+      nightDayHandler(this);
+    ">
   </div>
   <div id="grid">
     <ol>
